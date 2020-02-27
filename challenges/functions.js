@@ -3,7 +3,7 @@
 
 // Step 1: Create a higher-order function that will accept 3 parameters. The first two can take any argument. The last is your callback. This function should return your callback that passed the first two parameters as its argument.
 
-/* Step 2: Create several functions.
+/* Step 2: Create several functions that you will callback with the previous higher order function.
 The first will return the sum of two numbers.
 The second will return the product of two numbers.
 The third will return the modulus of the two numbers.
