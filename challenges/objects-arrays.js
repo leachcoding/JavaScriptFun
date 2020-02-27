@@ -28,15 +28,12 @@ What is the length of all 3 objects
 
 const gameCharacters = [
   {id: 1, name: "Mario", game: "Super Mario World", mission: "Save the Princess", enemy: "Bowser", subEnemies: ["Koopa", "Goomba", "BowserJr"]},
-  {id: 2, name: "Mario", game: "Super Mario World", mission: "Save the Princess", enemy: "Bowser", subEnemies: ["Koopa", "Goomba", "BowserJr"]},
-  {id: 3, name: "Mario", game: "Super Mario World", mission: "Save the Princess", enemy: "Bowser", subEnemies: ["Koopa", "Goomba", "BowserJr"]},
-  {id: 4, name: "Mario", game: "Super Mario World", mission: "Save the Princess", enemy: "Bowser", subEnemies: ["Koopa", "Goomba", "BowserJr"]},
-  {id: 5, name: "Mario", game: "Super Mario World", mission: "Save the Princess", enemy: "Bowser", subEnemies: ["Koopa", "Goomba", "BowserJr"]},
-  {id: 6, name: "Mario", game: "Super Mario World", mission: "Save the Princess", enemy: "Bowser", subEnemies: ["Koopa", "Goomba", "BowserJr"]},
-  {id: 7, name: "Mario", game: "Super Mario World", mission: "Save the Princess", enemy: "Bowser", subEnemies: ["Koopa", "Goomba", "BowserJr"]},
-  {id: 8, name: "Mario", game: "Super Mario World", mission: "Save the Princess", enemy: "Bowser", subEnemies: ["Koopa", "Goomba", "BowserJr"]},
-  {id: 9, name: "Mario", game: "Super Mario World", mission: "Save the Princess", enemy: "Bowser", subEnemies: ["Koopa", "Goomba", "BowserJr"]},
-  {id: 10, name: "Mario", game: "Super Mario World", mission: "Save the Princess", enemy: "Bowser", subEnemies: ["Koopa", "Goomba", "BowserJr"]}
+  {id: 2, name: "Clank", game: "Ratchet & Clank", mission: "Save the Universe", enemy: "Robot", subEnemies: ["small animal", "small robot", "mini boss"]},
+  {id: 3, name: "Master Chief", game: "Halo", mission: "Save the Universe", enemy: "Covenant", subEnemies: ["small shooters", "snipers", "elite"]},
+  {id: 4, name: "Donkey Kong", game: "Donkey Kong Country", mission: "Get bananas back", enemy: "Kroc", subEnemies: ["snakes", "gators", "bees"]},
+  {id: 5, name: "Sonic", game: "Sonic the Hedgehog", mission: "collect coins", enemy: "Dr Eggman", subEnemies: ["lasers", "spikes", "shooters"]},
+  {id: 6, name: "Jak", game: "Jak & Dexter", mission: "Get back life", enemy: "main boss", subEnemies: ["miniboss", "blaster", "shooter"]},
+
 ];
 
 // Step 1: Create a new array that will contain all games. Once you have it made, sort it ascending[A-Z]. Log the result. Solve two ways:
@@ -53,7 +50,7 @@ const gameCharacters = [
 // Map or forEach
 
 
-// Step 3: Find out how many sub enemies are in each character. Display the number as well as the array. Solve two ways
+// Step 3: Find out how many sub enemies are in each character. Display the number as well as the array. After you have displayed it, then take out the first sub enemy of each character and return the new results. Solve two ways
 
 // For Loop
 
