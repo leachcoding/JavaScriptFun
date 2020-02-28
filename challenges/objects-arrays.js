@@ -18,7 +18,7 @@ What is the length of all 3 objects
 */
 
 // Create a new bark method for the dog. When called, return "Woof!"
-// Create a new hunt method for the tiger. When called, if Math.random(10) is greater than 7, return "Tiger hunt successful" and add 5lb to the weight. If it is not, return "Tiger goes hungry" and subtract 5lbs to the weight.
+// Create a new hunt method for the tiger. When called, if Math.floor(Math.random() * 11) is greater than 7, return "Tiger hunt successful" and add 5lb to the weight. If it is not, return "Tiger goes hungry" and subtract 5lbs to the weight.
 // Create a new climb method for the koala. When called, return "Eucalyptus is great"
 
 
