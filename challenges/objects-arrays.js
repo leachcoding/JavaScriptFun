@@ -108,11 +108,25 @@ console.log(newArr3, 'foreach');
 // Step 2: Create a new array that will contain the name and mission of each character.Log the result. Solve two ways:
 
 // For Loop
+let newArr4 = [];
 
+for(let i =0; i< gameCharacters.length; i++) {
+  newArr4.push(`Name: ${gameCharacters[i].name}, Mission: ${gameCharacters[i].mission}`);
+}
+
+console.log(newArr4);
 // Map or forEach
+let newArr5 = gameCharacters.map(c => `Name: ${c.name} Mission: ${c.mission}`);
 
+console.log(newArr5);
+
+let newArr6 = [];
+gameCharacters.forEach(c => newArr6.push(`Name: ${c.name} Mission: ${c.mission}`));
+
+console.log(newArr6);
 
 // Step 3: Find out how many sub enemies are in each character. Display the number as well as the array. After you have displayed it, then take out the first sub enemy of each character and return the new results. Solve two ways
+
 
 // For Loop
 
