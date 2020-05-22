@@ -116,3 +116,56 @@ const runners = [{"id":1,"first_name":"Charmain","last_name":"Seiler","email":"c
 {"id":48,"first_name":"Anderea","last_name":"MacGiolla Pheadair","email":"amacgiollapheadair1b@xing.com","shirt_size":"2XL","company_name":"Kwimbee","donation":214},
 {"id":49,"first_name":"Bel","last_name":"Alway","email":"balway1c@ow.ly","shirt_size":"S","company_name":"Voolia","donation":107},
 {"id":50,"first_name":"Shell","last_name":"Baine","email":"sbaine1d@intel.com","shirt_size":"M","company_name":"Gabtype","donation":171}];
+
+
+// 1. Event director needs both the first and last names of each runner for their running bibs. Combine both into a new string 'FirstName LastName'
+
+// forloop
+let name1 = [];
+for(let i=0; i<runners.length; i++) {
+  name1.push(`${runners[i].first_name} ${runners[i].last_name}`);
+}
+//console.log(name1);
+
+// foreach
+let name2 = [];
+runners.forEach(runner => name2.push(`${runner.first_name} ${runner.last_name}`));
+//console.log(name2);
+
+// map
+let name3 = runners.map(runner => `${runner.first_name} ${runner.last_name}`)
+//console.log(name3);
+
+// filter if first name starts with B or last name starts with T
+let name4 = runners.filter(runner => {
+  if(runner.first_name[0] === "B" || runner.last_name[0] === "T") {
+    return runner
+  }
+});
+console.log(name4);
+
+let allCaps = runners.map(runner => {
+  return `${runner.first_name.toUpperCase()} ${runner.last_name.toLowerCase()}`
+})
+console.log(allCaps);
+// Use Reduce to calculate total donations
+let donation_value = runners.reduce((accumulator, currentValue) => accumulator + currentValue.donation, 0);
+console.log(donation_value);
+
+
+// forloop
+let counter = 0;
+
+for(let i=0; i<runners.length; i++) {
+  counter += runners[i].donation
+}
+console.log(counter);
+
+// Map
+let countValue = 0;
+runners.map(runner => countValue += runner.donation);
+console.log(countValue)
+
+// Filter by shirt size
+let shirtSize = runners.filter(runner => runner.shirt_size === "M");
+console.log(shirtSize);
